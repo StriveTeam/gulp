@@ -1,0 +1,23 @@
+{
+  "name": "gulp-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.7",
+    "gulp-connect": "^5.5.0"
+  }
+}
