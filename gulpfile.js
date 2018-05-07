@@ -55,7 +55,16 @@ gulp.task('minify',function () {
 
 //sass转换为css
 gulp.task('sass',function () {
-    gulp.src('src/sass/*.scss')
+    gulp.src('src/sass/style.scss')
+        .pipe(sass().on('error',sass.logError))
+        .pipe(gulp.dest('src/css'))
+        // .pipe(gulp.dest('dist/css'))
+        .pipe(browserSync.stream());
+})
+
+//sass转换为css
+gulp.task('sass2',function () {
+    gulp.src('src/sass/sass2.scss')
         .pipe(sass().on('error',sass.logError))
         .pipe(gulp.dest('src/css'))
         // .pipe(gulp.dest('dist/css'))
@@ -66,7 +75,7 @@ gulp.task('sass',function () {
 gulp.task('concat',function () {
     gulp.src('src/js/*.js')
         .pipe(concat('main.js'))//h合并完之后名字
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('src/jssss'))
         .pipe(browserSync.stream());
 })

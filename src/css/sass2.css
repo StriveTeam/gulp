@@ -1,0 +1,77 @@
+body {
+  background: #ffffff;
+  font-size: 0.24rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none; }
+
+html, body {
+  height: 100%;
+  overflow: hidden; }
+
+.pop.popBox {
+  width: 512px;
+  height: 459px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -256px;
+  margin-left: -230px;
+  background: url("../popImg/popBg.png") no-repeat center center; }
+
+.pop.loginPop {
+  width: 512px;
+  height: 289px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -145px;
+  margin-left: -256px;
+  background: url("../popImg/loginTip.png") no-repeat center center; }
+
+.pop .con {
+  padding: 25px 30px; }
+  .pop .con .close {
+    text-align: right; }
+    .pop .con .close i {
+      cursor: pointer;
+      display: inline-block;
+      width: 23px;
+      height: 24px;
+      background: url("../popImg/close.png") no-repeat center center; }
+  .pop .con .title {
+    text-align: center;
+    font-size: 28px;
+    font-family: "Kaiti TC"; }
+  .pop .con .name {
+    font: 20px "Kaiti TC";
+    text-align: center;
+    margin: 20px auto; }
+    .pop .con .name span {
+      color: #ff9000; }
+  .pop .con .form {
+    font-size: 14px;
+    margin-top: 34px; }
+    .pop .con .form > div {
+      margin-bottom: 20px; }
+      .pop .con .form > div lable {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        padding-right: 10px; }
+      .pop .con .form > div input {
+        width: 325px;
+        height: 35px;
+        padding: 5px 10px;
+        border: 1px solid #d8d8d8;
+        border-radius: 3px; }
+  .pop .con .btn {
+    cursor: pointer;
+    width: 132px;
+    height: 43px;
+    margin: 30px auto;
+    background: url("../popImg/checkBtn.png") no-repeat center center;
+    background-size: cover; }
