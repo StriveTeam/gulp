@@ -18,8 +18,8 @@ html, body {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-top: -256px;
-  margin-left: -230px;
+  margin-top: -230px;
+  margin-left: -256px;
   background: url("../popImg/popBg.png") no-repeat center center; }
 
 .pop.loginPop {
