@@ -103,6 +103,14 @@ div.page {
         div.page.page1 .botBtn > div:nth-child(3) {
           background-position: -5.20rem; }
 
+.popBg {
+  display: none;
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+
 .popRule {
   width: 6.45rem;
   height: 10.32rem;
@@ -133,7 +141,7 @@ div.page {
     bottom: 0.7rem;
     left: 50%;
     transform: translateX(-50%); }
-  .popRule.sec {
+  .popRule.secPop {
     background-image: url("../images/sPopBg.png"); }
   .popRule .con {
     display: flex;

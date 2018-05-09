@@ -34,6 +34,20 @@ $(document).ready(function() {
 
     });
 
+    $('.botBtn .ruleBtn').click(function () {
+        $('.bg1').fadeIn()
+
+    })
+
+    $('.botBtn .secBtn').click(function () {
+        $('.bg2').fadeIn()
+    })
+
+
+    $('.close,.popBg .btn').click(function () {
+        $(this).parent().parent('.popBg').fadeOut()
+    })
+
 
     var startY;
     var tempY;
@@ -48,7 +62,7 @@ $(document).ready(function() {
     var nowZindex = 1;
 
     //开始触摸
-    $(document).on("touchstart",function(event){
+    $('body .page').on("touchstart",function(event){
         var finger = event.touches[0];
         startY = finger.pageY;
 
@@ -59,7 +73,7 @@ $(document).ready(function() {
     });
 
     //触摸滑动
-    $(document).on("touchmove",function(event){
+    $('body .page').on("touchmove",function(event){
         event.preventDefault();
         var finger = event.touches[0];
         tempY = finger.pageY;
@@ -82,7 +96,7 @@ $(document).ready(function() {
     });
 
     //触摸结束
-    $(document).on("touchend",function(event){
+    $('body .page').on("touchend",function(event){
         if(event.target.className === 'btn'){
             dangqianpage.animate({"-webkit-transform":"translateY(0%)"},200);
             xiapage.animate({"-webkit-transform":"translateY(0)"},200);
