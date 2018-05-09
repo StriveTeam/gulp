@@ -56,8 +56,8 @@ gulp.task('minify',function () {
 //sass转换为css
 gulp.task('sass',function () {
     gulp.src('src/sass/style.scss')
-    gulp.src('src/sass/sass2.scss')
-    gulp.src('src/sass/Treasury.scss')
+    // gulp.src('src/sass/sass2.scss')
+    // gulp.src('src/sass/Treasury.scss')
         .pipe(sass().on('error',sass.logError))
         .pipe(gulp.dest('src/css'))
         // .pipe(gulp.dest('dist/css'))

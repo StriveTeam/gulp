@@ -13,36 +13,6 @@ html, body {
   overflow: hidden;
   background-color: #000; }
 
-/*
-
-.dialog{
-
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  >div{
-    width: 100%;
-  }
-  .bg{
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #000000;
-    opacity: 0.6;
-  }
-  .con{
-    height: 200px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: bisque;
-  }
-}
-
-*/
 div.page {
   width: 100%;
   height: 100%;
@@ -132,3 +102,60 @@ div.page {
           background-position: -2.58rem; }
         div.page.page1 .botBtn > div:nth-child(3) {
           background-position: -5.20rem; }
+
+.popRule {
+  width: 6.45rem;
+  height: 10.32rem;
+  background: url("../images/ruleBg.png") no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .popRule .close {
+    width: 100%;
+    height: 0.24rem;
+    text-align: right;
+    padding: 0.31rem; }
+    .popRule .close i {
+      display: inline-block;
+      width: 0.46rem;
+      height: 0.48rem;
+      background: url("../images/close.png") no-repeat center center;
+      background-size: cover; }
+  .popRule .btn {
+    width: 1.7rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    background: url("../images/checkBtn.png") no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0.7rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .popRule.sec {
+    background-image: url("../images/sPopBg.png"); }
+  .popRule .con {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin-top: 1rem; }
+    .popRule .con .item {
+      width: 1.2rem;
+      margin: 0 0.3rem 0.3rem 0.3rem; }
+      .popRule .con .item .img {
+        width: 1rem;
+        height: 1rem;
+        overflow: hidden;
+        margin: 0 auto; }
+        .popRule .con .item .img img {
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%; }
+      .popRule .con .item p {
+        text-align: center;
+        padding: 0.2rem 0;
+        font-size: 0.2rem;
+        font-family: "Microsoft Sans Serif";
+        color: #333333; }
